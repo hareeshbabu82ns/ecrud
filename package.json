@@ -1,0 +1,22 @@
+{
+  "name": "ecrud",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ."
+  },
+  "main": "./server/app.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "body-parser": "~1.0.0",
+    "express": "~4.2.0",
+    "kaiseki": "^0.5.6",
+    "mongoose": "~3.8.11",
+    "parse": "^1.6.8",
+    "path": "^0.12.7",
+    "underscore": "^1.8.3"
+  }
+}

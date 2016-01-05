@@ -1,0 +1,170 @@
+<div class="panel panel-default scroll-panel">
+  <div class="panel-heading">
+    <i class="fa fa-comments fa-fw"></i>Artists
+    <div class="btn-group pull-right">
+      <button type="button" class="btn btn-default btn-xs"
+              ng-click="newArtist()">
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+  </div>
+  <!-- /.panel-heading -->
+  <div class="list-group">
+    <a ui-sref="artists.detail({id:artist.objectId})" class="list-group-item"
+       ng-repeat="artist in artists" ng-class="{ active: artist.objectId == $stateParams.id }">
+      <i class="fa fa- fa-fw"></i> {{artist.name}}
+        <span class="pull-right text-muted small"><em></em>
+        </span>
+    </a>
+  </div>
+  <!-- /.list-group -->
+</div>
+<!-- /.panel -->
+
+<!-- nqPageable -->
+<!--<div class="container-fluid">-->
+  <!--<div class="clearfix">-->
+    <!--<h1><i class="glyphicon glyphicon-fire"></i> Gods</h1>-->
+    <!--<hr/>-->
+    <!--<div class="panel panel-default" data-nq-pageable="gods"-->
+         <!--data-qo-alias="godsTable" data-qo-pageable-model="gods"-->
+         <!--data-qo-selectable="true" data-on-refresh="tableScroller.refresh();">-->
+      <!--&lt;!&ndash;<div class="panel panel-default" data-nq-pageable=""&ndash;&gt;-->
+      <!--&lt;!&ndash;data-qo-base-url="/api/gods"&ndash;&gt;-->
+      <!--&lt;!&ndash;data-updated="tableScroller.refresh()"&ndash;&gt;-->
+      <!--&lt;!&ndash;data-qo-alias="godsTable" data-qo-pageable-model="gods"&ndash;&gt;-->
+      <!--&lt;!&ndash;data-qo-selectable="true" data-on-refresh="tableScroller.refresh();">&ndash;&gt;-->
+      <!--<div class="panel-heading clearfix">-->
+        <!--&lt;!&ndash;add nq-paging-sizes directive where you want and how many you want&ndash;&gt;-->
+        <!--<div class="pull-right" data-nq-paging-sizes=""></div>-->
+        <!--&lt;!&ndash;add nq-table-search directive where you want and how many you want&ndash;&gt;-->
+        <!--<div class="col-xs-5 pull-right" data-nq-table-search="" data-search-fields="foo"-->
+             <!--style="margin-right:10px;"></div>-->
+        <!--<h2 class="panel-title pull-left"><i class="fic glyphicon glyphicon-user"></i> Gods</h2>-->
+
+        <!--<div class="pull-left" style="padding-left:15px;">-->
+          <!--<button type="button" class="btn btn-xs btn-info" ng-click="godsTable.refresh()"><i-->
+              <!--class="fic glyphicon glyphicon-refresh"></i>-->
+          <!--</button>-->
+        <!--</div>-->
+        <!--<div class="pull-left" style="padding-left:15px;">-->
+          <!--<button type="button" class="btn btn-xs btn-primary" data-nq-show-insert="" data-template-id="add"><i-->
+              <!--class="fic glyphicon glyphicon-plus-sign"></i>-->
+          <!--</button>-->
+        <!--</div>-->
+        <!--<div class="pull-left" style="padding-left:15px;">-->
+          <!--<button type="button" class="btn btn-xs btn-danger" ng-click="godsTable.removeRows()"><i-->
+              <!--class="fic glyphicon glyphicon-remove-circle"></i>-->
+          <!--</button>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="panel-body table-responsive" data-nq-scroll="" data-qo-max-height="350px" data-qo-bar-offset="40"-->
+           <!--data-bar-model="tableScroller" style="overflow:hidden;">-->
+        <!--<table class="table table-bordered table-hover bg-white">-->
+          <!--&lt;!&ndash;nq-fix-table-scroll class would fix thead always visible at top of the table if you put the table into a scrollable container&ndash;&gt;-->
+          <!--<thead class="nq-fix-table-scroll">-->
+          <!--<tr>-->
+            <!--&lt;!&ndash;nq-column-sort directive would bind sorting handler to the element&ndash;&gt;-->
+            <!--<th class="col-xs-2" data-nq-column-sort="objectId" data-use-template="true">ID</th>-->
+            <!--<th class="col-xs-3" data-nq-column-sort="foo" data-use-template="true">Foo</th>-->
+            <!--<th class="col-xs-1">Action</th>-->
+          <!--</tr>-->
+          <!--</thead>-->
+          <!--<tbody class="flattened">-->
+          <!--&lt;!&ndash;pageable-repeat is required sub directive&ndash;&gt;-->
+          <!--<tr class="" data-pageable-repeat="god in gods track by $index">-->
+            <!--<td>-->
+                <!--<span class="text-block text-sm">-->
+                    <!--<a tabindex="0" role="button" data-nq-show-detail="detail" data-template-id="detail">{{god.objectId}}</a>-->
+                <!--</span>-->
+            <!--</td>-->
+            <!--<td>-->
+              <!--<span class="text-block ">-->
+                  <!--{{god.foo}}-->
+              <!--</span>-->
+            <!--</td>-->
+            <!--<td>-->
+              <!--<a role="button" tabindex="0" ng-click="removeRow()" class="titip-left" data-title="Remove">-->
+                <!--<i class="fic glyphicon glyphicon-remove"></i>-->
+              <!--</a>-->
+              <!--<a role="button" tabindex="0" data-nq-show-edit="edit" class="titip-left" data-title="Update">-->
+                <!--<i class="fic glyphicon glyphicon-pencil"></i>-->
+              <!--</a>-->
+            <!--</td>-->
+          <!--</tr>-->
+          <!--</tbody>-->
+          <!--<tfoot class="nq-fix-table-scroll">-->
+          <!--<tr>-->
+            <!--<th class="col-xs-2">ID</th>-->
+            <!--<th class="col-xs-3">Foo</th>-->
+            <!--<th class="col-xs-1">Action</th>-->
+          <!--</tr>-->
+          <!--</tfoot>-->
+        <!--</table>-->
+      <!--</div>-->
+      <!--<div data-nq-pageable-template="" data-template-id="edit"-->
+           <!--data-name="godFormEdit" ng-form="" data-alias="god"-->
+           <!--data-on-change="panelTitle = god.foo" ng-submit="$save()"-->
+           <!--style="max-height:100%; overflow:hidden; overflow-y:auto;" nq-validate-form="">-->
+        <!--&lt;!&ndash;You are not able to load your content via ng-include. However, I think this way may be a best practice &ndash;&gt;-->
+        <!--<div ng-include="" data-src="'/partials/gods/edit.html'">-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div data-nq-pageable-template="" data-template-id="add"-->
+           <!--data-name="godFormAdd" ng-form="" data-alias="god"-->
+           <!--data-on-change="panelTitle = new" ng-submit="$save()"-->
+           <!--style="max-height:100%; overflow:hidden; overflow-y:auto;" nq-validate-form="">-->
+        <!--&lt;!&ndash;You are not able to load your content via ng-include. However, I think this way may be a best practice &ndash;&gt;-->
+        <!--<div ng-include="" data-src="'/partials/gods/new.html'">-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div data-nq-pageable-template="" data-template-id="detail"-->
+           <!--data-name="godFormDetail" ng-form="" data-alias="god"-->
+           <!--data-on-change="panelTitle = god.foo" ng-submit="$save()"-->
+           <!--style="max-height:100%; overflow:hidden; overflow-y:auto;" nq-validate-form="">-->
+        <!--&lt;!&ndash;You are not able to load your content via ng-include. However, I think this way may be a best practice &ndash;&gt;-->
+        <!--<div ng-include="" data-src="'/partials/gods/detail.html'">-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="row">-->
+      <!--<div class="col-sm-5">-->
+        <!--&lt;!&ndash;set nq-pageable directive to a container&ndash;&gt;-->
+        <!--<div data-nq-pageable="gods" data-qo-pageable-model="gods"-->
+             <!--data-qo-alias="gods2Table">-->
+          <!--<div class="list-group">-->
+            <!--<div class="list-group-item bg-100">-->
+              <!--<h3 class="no-margin">Summary Bottom</h3>-->
+            <!--</div>-->
+            <!--<div data-nq-scroll="" data-qo-max-height="300px" data-qo-bar-offset="40"-->
+                 <!--style="overflow:hidden; min-height:300px;">-->
+              <!--<div class="list-group-item" data-pageable-repeat="god in gods track by $index">-->
+                <!--<div class="row-table">-->
+                  <!--<div class="col-xs-2">-->
+                    <!--<img class="img-circle" data-fall-back-bg=""-->
+                         <!--ng-src="/data/images/users/thumbs/{{contact.images.img32}}">-->
+                  <!--</div>-->
+                  <!--<div class="col-xs">-->
+                    <!--<h5><strong>{{god.foo}}</strong></h5>-->
+
+                    <!--<div><i class="text-xs gray">email</i></div>-->
+                    <!--<span class="text-block text-xs">-->
+                      <!--<small>company</small>-->
+                    <!--</span>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="list-group-item bg-50">-->
+              <!--&lt;!&ndash;add data-nq-pageable-results directive where you want and how many you want&ndash;&gt;-->
+              <!--<div data-nq-pageable-results=""></div>-->
+              <!--<div data-nq-pagination="" class="pull-right no-margin"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->

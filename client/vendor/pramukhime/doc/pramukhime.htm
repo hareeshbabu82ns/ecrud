@@ -1,0 +1,1368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+        <meta name="copyright" content="Copyright &copy; Vishal Monpara" />
+		
+		<title>PramukhIME Documentation</title>
+
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 14px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 160px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+	padding: 8px;
+}
+
+#content
+{
+	width: 100%;
+}
+
+.classList
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 8px;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+	background-color: #7F8FB1;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+	border: 1px #7F8FB1 solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PramukhIME
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				PramukhIME is the highly customizable javascript class required for enabling PramukhIME for any HTML element like textbox, textarea, iframe or div. This class requires keyboard plugin in order to type in the language supported by that keyboard plugin.Using 4 lines of code you can enable any Webpage to have Pramukh IME on it. <br><pre>&lt;html&gt;<br />&lt;head&gt;<br />    <strong>&lt;script type="text/javascript" src="js/pramukhime.js"&gt;&lt;/script&gt;<br />    &lt;script type="text/javascript" src="js/pramukhindic.js"&gt;&lt;/script&gt;</strong><br />&lt;/head&gt;<br />&lt;body&gt;<br />    &lt;input type="text" id="first_name"&gt;<br />    &lt;script language="javascript" type="text/javascript"&gt;<br />        <strong>pramukhIME.addLanguage(PramukhIndic,"hindi"); <br />        pramukhIME.enable();</strong><br />    &lt;/script&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre><strong>Features</strong><ul><li>Requires only 4 lines of code to enable PramukhIME on any Web page.</li><li>Supports multiple keyboard layout for any language</li><li>Customizable keyboard shortcut to switch between selected language and English.</li><li>Key board events can be attached automatically or manually as per developer's choice</li><li>Provides fine control over chosing which HTML element to enable.</li><li>Supports multiple browsers.</li><li>Developer can create his/her own keyboard layout and easily integrate with the library.</li></ul>
+				
+				
+				
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PramukhIME.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PramukhIME.html#constructor">PramukhIME</a></b>()
+							</div>
+							<div class="description"></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class PramukhIME.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#addLanguage">addLanguage</a></b>(KeyboardPlugin, DefaultLanguage, SupportedLanguages)
+								</div>
+								<div class="description">This function adds language plugin.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#convert">convert</a></b>(InputString, FromLanguage, ToLanguage)
+								</div>
+								<div class="description">This function converts the text from one language to another.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#disable">disable</a></b>(ElementName)
+								</div>
+								<div class="description">Disables Pramukh IME from single HTML element or whole Web page.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#enable">enable</a></b>(ElementName, ElementObject, ExceptionList, DefaultEvent)
+								</div>
+								<div class="description">Enables PramukhIME on a specified HTML element or a page.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#getChars">getChars</a></b>()
+								</div>
+								<div class="description">This function gets a list of all supported Unicode characters.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#getConversionLanguage">getConversionLanguage</a></b>()
+								</div>
+								<div class="description">This function gets the conversion language name</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#getEventObject">getEventObject</a></b>(ElementName, DefaultEventObject)
+								</div>
+								<div class="description">Depending on the browser and type of HTML element, this method returns the Event Object.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#getExamples">getExamples</a></b>()
+								</div>
+								<div class="description">This function gets a list of example words of the selected language and/or keyboard layout.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#getHelp">getHelp</a></b>()
+								</div>
+								<div class="description">Gets the detailed help file name of the currently selected language.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#getHelpImage">getHelpImage</a></b>()
+								</div>
+								<div class="description">Gets the help image file name of the selected language and keyboard.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#getIcon">getIcon</a></b>(icon)
+								</div>
+								<div class="description">Gets the requested icon file name of the currently selected language.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#getLanguage">getLanguage</a></b>(ElementName)
+								</div>
+								<div class="description">Gets the currently set language/keyboard name.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#getToggleKey">getToggleKey</a></b>()
+								</div>
+								<div class="description">Gets the shortcut key</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#onKeydown">onKeydown</a></b>(ElementName, Evt)
+								</div>
+								<div class="description">Manually assign the keydown event of HTML element.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#onKeypress">onKeypress</a></b>(ElementName, Evt)
+								</div>
+								<div class="description">Manually execute this function on the keypress event of HTML element.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#onLanguageChange">onLanguageChange</a></b>(cbName, context, remove)
+								</div>
+								<div class="description">Using this method, any one can subscribe to "onLanguageChange" event whenever the language is changed.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#rectify">rectify</a></b>(InputString)
+								</div>
+								<div class="description">This function rectifies the input string by replacing wrong combination of letters with correct one.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#removeLanguage">removeLanguage</a></b>(LanguageName, KeyboardName)
+								</div>
+								<div class="description">Removes the language plugin.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#setLanguage">setLanguage</a></b>(LanguageName, KeyboardName)
+								</div>
+								<div class="description">Sets new language so now user will start typing in the provided language using provided keyboard layout.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PramukhIME.html#setToggleKey">setToggleKey</a></b>(Key, Ctrl, Alt)
+								</div>
+								<div class="description">Sets the shortcut key to switch between selected language and English.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PramukhIME</b>()
+				</div>
+				
+				<div class="description">
+					
+					
+				</div>
+				
+				
+				
+				
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="addLanguage"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Object}</span>
+					<b>addLanguage</b>(KeyboardPlugin, DefaultLanguage, SupportedLanguages)
+					
+					</div>
+					<div class="description">
+						This function adds language plugin. If the SupportedLanguages parameter is not provided, all the languages supported by theplugin will be added. If the SupportedLanguages is provided, only supported language from the SupportedLanguages will be activated.The developer can remove the added language, by using the function <a href="../symbols/PramukhIME.html#removeLanguage">PramukhIME#removeLanguage</a>.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object/Function/String}</span> <b>KeyboardPlugin</b>
+									
+								</dt>
+								<dd>It can be an Object / Function/ Function Name which will be initialized as an object.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>DefaultLanguage</b>
+									
+								</dt>
+								<dd>(Optional) Once the KeyboardPlugin is added, immediately this language will be set. If it is null, currently selected language will be unaffected.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String Array}</span> <b>SupportedLanguages</b>
+									
+								</dt>
+								<dd>(Optional) Array of language names. This list can be partial list of what KeyboardPlugin can support.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Object}</span> KeyboardPlugin object</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="convert"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>convert</b>(InputString, FromLanguage, ToLanguage)
+					
+					</div>
+					<div class="description">
+						This function converts the text from one language to another. Keyboard developer defines which language to be converted to/from.List of supported conversion languages can be found from <a href="../symbols/PramukhIME.html#getConversionLanguage">PramukhIME#getConversionLanguage</a>All the characters which does not belong to the selected language will be output as it is.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>InputString</b>
+									
+								</dt>
+								<dd>Unicode/English string</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>FromLanguage</b>
+									
+								</dt>
+								<dd>It is the language name from which we want to convert InputString</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>ToLanguage</b>
+									
+								</dt>
+								<dd>It is the language name to which we want to convert InputString</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Equivalent of the input string. Checkout keyboard developer documentation for further information.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="disable"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>disable</b>(ElementName)
+					
+					</div>
+					<div class="description">
+						Disables Pramukh IME from single HTML element or whole Web page. This method cleans up memory and removes event handlers associated with element if the event handlers areautomatically assigned. If you have manually assigned event handler's, you should manually remove it.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>ElementName</b>
+									
+								</dt>
+								<dd>(Optional) Element's name for which you want to disable PramukhIME. If the element name is not specified, it will disable the PramukhIME from the whole page.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="enable"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>enable</b>(ElementName, ElementObject, ExceptionList, DefaultEvent)
+					
+					</div>
+					<div class="description">
+						Enables PramukhIME on a specified HTML element or a page. Using this method, you can enable PramukhIME for an element one by one by providing values in first two arguments. If you want to enable PramukhIME on all textbox and textareas, call this function without passing any argument. In the example at the very top, you may write third line as <pre><strong>pramukhIME.enable('first_name');</strong> OR<br /><strong>pramukhIME.enable('My_custom_name',document.getElementById('first_name'));</strong> OR <br /><strong>pramukhIME.enable('My_custom_name',document.getElementById('first_name'),null,true);</strong></pre><br /> If you want to assign events manually, you may want to code like this <br><pre>pramukhIME.enable('<span style="color: #0000ff;">My_custom_name</span>',document.getElementById('first_name'),null,<span style="color: #ff0000;">false</span>);<br />if (Internet Explorer)<br />{<br />    document.getElementById('first_name').onkeypress = function (e) { pramukhIME.onKeypress('<span style="color: #0000ff;">My_custom_name</span>',e);}<br />    document.getElementById('first_name').onkeydown = function (e) { pramukhIME.onKeydown('<span style="color: #0000ff;">My_custom_name</span>',e);}<br />}<br />else<br />{<br />    document.getElementById('first_name').addEventListener("keypress",function (e) { pramukhIME.onKeypress('<span style="color: #0000ff;">My_custom_name</span>',e);}, true);<br />    document.getElementById('first_name').addEventListener("keydown",function (e) { pramukhIME.onKeydown('<span style="color: #0000ff;">My_name</span>',e);}, true);<br />}<strong><strong><br /></strong></strong></pre>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>ElementName</b>
+									
+								</dt>
+								<dd>(Optional) Element's name. You may pass element id/string of your choice/null(random name starting with "pramukhime_" will be generated). If ElementObject is not provided, ElementObject is assumed to be existing in DOM with id as ElementName</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>ElementObject</b>
+									
+								</dt>
+								<dd>(Optional) Element's actual object. You can get this object by executing document.getElementById('ElementID')</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>ExceptionList</b>
+									
+								</dt>
+								<dd>(Optional) Comma separated list of ids for which you don't want to enable PramukhIME</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Boolean}</span> <b>DefaultEvent</b>
+									
+								</dt>
+								<dd>(Optional) If True, library will itself attach the keypress and keydown event to element represented by ElementName or ElementObject. If False, developer has to manually handle keypress and keydown event and call <a href="../symbols/PramukhIME.html#onKeypress">PramukhIME#onKeypress</a> and <a href="../symbols/PramukhIME.html#onKeydown">PramukhIME#onKeydown</a> methods with necessary arguments</dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									 <b></b>
+								</dt>
+								<dd>General Exception if ElementObject is not specified and ElementName does not represents id of any element in DOM.</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{String}</span> ElementName If the ElementName is not provided in the argument, it will provide the id of ElementObject or internally created element name</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getChars"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getChars</b>()
+					
+					</div>
+					<div class="description">
+						This function gets a list of all supported Unicode characters.This function will in turn call the selected keyboard layout plugin's getChars() function.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Array of supported Unicode characters of the selected keyboard language as a String</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getConversionLanguage"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Object}</span>
+					<b>getConversionLanguage</b>()
+					
+					</div>
+					<div class="description">
+						This function gets the conversion language name
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Object}</span> Object.language is the conversion language name as a string, Object.preferredFont is the font name to be used for showing the text and Object.reverseConversionSupported is a boolean value indicating if the exact reverse conversion of text is supported.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getEventObject"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getEventObject</b>(ElementName, DefaultEventObject)
+					
+					</div>
+					<div class="description">
+						Depending on the browser and type of HTML element, this method returns the Event Object.  If you are passing the last parametervalue as "true" in the method <a href="../symbols/PramukhIME.html#enable">PramukhIME#enable</a>, you <strong>must not</strong> use this method unless you know what you are doing.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>ElementName</b>
+									
+								</dt>
+								<dd>Element's name</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Event}</span> <b>DefaultEventObject</b>
+									
+								</dt>
+								<dd>Default event object resulting from  a keyboard event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Actual event object</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getExamples"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getExamples</b>()
+					
+					</div>
+					<div class="description">
+						This function gets a list of example words of the selected language and/or keyboard layout.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Array of Unicode words of the selected keyboard layout as a String</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getHelp"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getHelp</b>()
+					
+					</div>
+					<div class="description">
+						Gets the detailed help file name of the currently selected language. This is an HTML page.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>detailed help html file name</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getHelpImage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getHelpImage</b>()
+					
+					</div>
+					<div class="description">
+						Gets the help image file name of the selected language and keyboard.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>help image file name</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getIcon"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Object}</span>
+					<b>getIcon</b>(icon)
+					
+					</div>
+					<div class="description">
+						Gets the requested icon file name of the currently selected language.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Integer}</span> <b>icon</b>
+									
+								</dt>
+								<dd>1 = Language Icon, 2 = Language Conversion Icon, 3 = Language Click Icon, 4 = Language Help Icon, 5 = Script Conversion Icon, 6 = Reserved 1, 7= Reserved 2</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Object}</span> Object.iconFile is the icon file name, Object.x is the x position of the icon from left, Object.y is the y position of the icon from the top.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLanguage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getLanguage</b>(ElementName)
+					
+					</div>
+					<div class="description">
+						Gets the currently set language/keyboard name.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>ElementName</b>
+									
+								</dt>
+								<dd>Element's name whose current language you want to get</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Object with Object.language is a <b>lower cased</b> name of the language and Object.keyboard is a <b>lower cased</b> name of the keyboard.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getToggleKey"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getToggleKey</b>()
+					
+					</div>
+					<div class="description">
+						Gets the shortcut key
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>Object with Object.code is the key, Object.ctrl is a boolean indicating control key press required or not and Object.alt is a boolean indicating alt key press is required or not</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="onKeydown"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>onKeydown</b>(ElementName, Evt)
+					
+					</div>
+					<div class="description">
+						Manually assign the keydown event of HTML element. This is useful when element is subscribed to the event. If you are passing the last parametervalue as "true" in the method <a href="../symbols/PramukhIME.html#enable">PramukhIME#enable</a>, you <strong>must not</strong> use this method unless you know what you are doing.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>ElementName</b>
+									
+								</dt>
+								<dd>Element's name</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Event}</span> <b>Evt</b>
+									
+								</dt>
+								<dd>Event object</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>True/False for further bublling the event</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="onKeypress"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>onKeypress</b>(ElementName, Evt)
+					
+					</div>
+					<div class="description">
+						Manually execute this function on the keypress event of HTML element. This is useful when element is subscribed to the event.  If you are passing the last parametervalue as "true" in the method <a href="../symbols/PramukhIME.html#enable">PramukhIME#enable</a>, you <strong>must not</strong> use this method unless you know what you are doing.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>ElementName</b>
+									
+								</dt>
+								<dd>Element's name</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Event}</span> <b>Evt</b>
+									
+								</dt>
+								<dd>Event object</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>True/False for further bublling the event</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="onLanguageChange"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>onLanguageChange</b>(cbName, context, remove)
+					
+					</div>
+					<div class="description">
+						Using this method, any one can subscribe to "onLanguageChange" event whenever the language is changed. This method is also used to removesubscription by providing third parameter as "true".
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Function}</span> <b>cbName</b>
+									
+								</dt>
+								<dd>Callback method. This function should accept three params. 1) Language Name, 2) Keyboard Name, 3) Context</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>context</b>
+									
+								</dt>
+								<dd>context string. It will be passed to the callback method as it is.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Boolean}</span> <b>remove</b>
+									
+								</dt>
+								<dd>If true, subscriber will be removed from language change notification, otherwise, it will be added.</dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									 <b></b>
+								</dt>
+								<dd>GeneralException if callback method is not a valid method</dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">See:</dt>
+							
+								<dd><a href="../symbols/PramukhIME.html#setToggleKey">#setToggleKey</a></dd>
+							
+							</dl>
+						
+
+					<hr />
+				
+					<a name="rectify"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>rectify</b>(InputString)
+					
+					</div>
+					<div class="description">
+						This function rectifies the input string by replacing wrong combination of letters with correct one.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>InputString</b>
+									
+								</dt>
+								<dd>an input string containing the letters of currently selected language</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>rectified string</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="removeLanguage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>removeLanguage</b>(LanguageName, KeyboardName)
+					
+					</div>
+					<div class="description">
+						Removes the language plugin. In order to successfully remove the Keyboard layout of a particular language,it must have been added by calling <a href="../symbols/PramukhIME.html#addLanguage">PramukhIME#addLanguage</a>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>LanguageName</b>
+									
+								</dt>
+								<dd>Language name to remove</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>KeyboardName</b>
+									
+								</dt>
+								<dd>Keyboard name to remove</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setLanguage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setLanguage</b>(LanguageName, KeyboardName)
+					
+					</div>
+					<div class="description">
+						Sets new language so now user will start typing in the provided language using provided keyboard layout. Before settingany custom language/keyboard layout, it must be added using <a href="../symbols/PramukhIME.html#addLanguage">PramukhIME#addLanguage</a>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>LanguageName</b>
+									
+								</dt>
+								<dd>New language name. It must be one of the supported/added language name otherwise it will set to English.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>KeyboardName</b>
+									
+								</dt>
+								<dd>Name of the keyboard layout</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setToggleKey"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setToggleKey</b>(Key, Ctrl, Alt)
+					
+					</div>
+					<div class="description">
+						Sets the shortcut key to switch between selected language and English. Default value for toggle key is 120 (F9 key). If the user is typing in a text box(or any PramukhIME enabled HTML element) and presses F12 key, user can immediately starttyping in English. Press F9 key to again type in previously selected language. <strong>To completely turn off switching between selected languageand English, pass 0 as parameter.</strong>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>Key</b>
+									
+								</dt>
+								<dd>Key Code in KeyDown event.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Boolean}</span> <b>Ctrl</b>
+									
+								</dt>
+								<dd>Hold down Control key for switching between English and selected language?</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Boolean}</span> <b>Alt</b>
+									
+								</dt>
+								<dd>Hold down Alt key for switching between English and selected language?</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by JsDoc Toolkit 2.4.0</div>
+	</body>
+</html>

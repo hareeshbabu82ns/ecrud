@@ -1,0 +1,53 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <i class="fa fa-comments fa-fw"></i> {{language.foo}}
+  </div>
+  <!-- /.panel-heading -->
+  <div class="panel-body">
+
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-2 control-label">ID</label>
+
+        <div class="col-sm-10">
+          <p class="form-control-static">{{language.objectId}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Name</label>
+
+        <div class="col-sm-10">
+          <p class="form-control-static">{{language.name}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Code</label>
+
+        <div class="col-sm-10">
+          <p class="form-control-static">{{language.code}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Local Name</label>
+
+        <div class="col-sm-10">
+          <p class="form-control-static">{{language.name_local}}</p>
+        </div>
+      </div>
+    </form>
+    <!-- /. form -->
+    <div class="btn-group-sm pull-right">
+      <button type="button" class="btn btn-primary btn-sm" ui-sref="languages.edit({id:language.objectId})"
+      ">
+      <i class="fa fa-pencil"></i> Edit
+      </button>
+      <button type="button" class="btn btn-danger btn-sm" ng-click="deleteLanguage()">
+        <i class="fa fa-trash"></i> Delete
+      </button>
+    </div>
+  </div>
+  <!-- /.panel-body -->
+
+  <!-- /.panel-footer -->
+</div>
+<!-- /.panel -->

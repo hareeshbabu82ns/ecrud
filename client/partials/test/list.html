@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <i class="fa fa-comments fa-fw"></i>Tests
+        <div class="btn-group pull-right">
+            <button type="button" class="btn btn-default btn-xs"
+                ng-click="newTest()">
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /.panel-heading -->
+      <div class="list-group">
+        <a ng-click="gotoTest(test)" class="list-group-item" ng-repeat="test in tests">
+          <i class="fa fa- fa-fw"></i> {{test.name}}
+        <span class="pull-right text-muted small"><em></em>
+        </span>
+        </a>
+      </div>
+      <!-- /.list-group -->
+</div>
+<!-- /.panel -->

@@ -1,0 +1,29 @@
+{
+  "name": "ecrud",
+  "description": "",
+  "main": "./server/app.js",
+  "authors": [
+    "Hareesh Polla"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "path": "~3.46.1",
+    "bootstrap": "~3.3.5",
+    "quantumui": "~1.0.0",
+    "angular-resource": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "startbootstrap-sb-admin-2": "~1.0.7",
+    "underscore": "~1.8.3",
+    "ng-file-upload": "~9.1.2",
+    "async": "~1.5.0"
+  }
+}

@@ -1,0 +1,58 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <i class="fa fa-comments fa-fw"></i> {{god.name}}
+  </div>
+  <!-- /.panel-heading -->
+  <div class="panel-body">
+    <form class="form-horizontal">
+      <div class="row">
+        <div class="col-xs-7">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">ID</label>
+
+            <div class="col-sm-10">
+              <p class="form-control-static">{{god.objectId}}</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Name</label>
+
+            <div class="col-sm-10">
+              <p class="form-control-static">{{god.name}}</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Thumbnail</label>
+
+            <div class="col-sm-10">
+              <p class="form-control-static">{{god.thumbnail}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form-group" ng-repeat="godt in god_t">
+            <label class="col-sm-2 control-label">{{godt.languageId.code}}</label>
+
+            <div class="col-sm-8">
+              <p class="form-control-static">{{godt.name}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- /. form -->
+    <div class="btn-group-sm pull-right">
+      <button type="button" class="btn btn-primary btn-sm" ui-sref="gods.edit({id:god.objectId})">
+      <i class="fa fa-pencil"></i> Edit
+      </button>
+      <button type="button" class="btn btn-danger btn-sm" ng-click="deleteGod()">
+        <i class="fa fa-trash"></i> Delete
+      </button>
+    </div>
+  </div>
+  <!-- /.panel-body -->
+
+  <!-- /.panel-footer -->
+</div>
+<!-- /.panel -->

@@ -1,0 +1,22 @@
+<div class="panel panel-default scroll-panel">
+  <div class="panel-heading">
+    <i class="fa fa-comments fa-fw"></i>Languages
+    <div class="btn-group pull-right">
+      <button type="button" class="btn btn-default btn-xs"
+              ng-click="newLanguage()">
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+  </div>
+  <!-- /.panel-heading -->
+  <div class="list-group">
+    <a ui-sref="languages.detail({id:language.objectId})" class="list-group-item"
+       ng-repeat="language in languages" ng-class="{ active: language.objectId == $stateParams.id }">
+      <i class="fa fa- fa-fw"></i> {{language.name_local}}
+        <span class="pull-right text-muted small"><em></em>
+        </span>
+    </a>
+  </div>
+  <!-- /.list-group -->
+</div>
+<!-- /.panel -->

@@ -1,0 +1,69 @@
+Version 3.0 (June 2012)
+
+Due to major changes, I am not able to identify and list each change here. Please feel free to compare the versions.
+Here is a list of all major functionality changes.
+
+* PramukhIME functionality is split into core engine and keyboard functionality. Now any developer can create a
+  keyboard of their choice and easily integrate with PramukhIME.
+* PramukhIME is now language based instead of script based.
+* Enables user to convert the Unicode text into other languages.
+* Unicode 6.0 compliant output
+* Indian Rs. symbol and swastika symbol is added.
+
+
+Version 2.5.1 (September 2009)
+
+* For all scripts letter | will be printed by typing |~
+* Fixed small bug for Kannada, Malayalam, Tamil and Telugu: typing digit after consonant would remove halant
+* All help image files are modified as png to reduce the size
+* For Malayalam help file, Chillu character N added
+* For Oriya help file, "y" and "ki" was showing wrong characters
+* In Tamil help file, example "sri" was wrong, it should be "srI"
+
+Version 2.5 (July 2009)
+
+Functional Changes
+* ConvertAllToIndicIME is removed and ConvertPageToIndicIME is added which does the same function
+* ConvertPageToDefault and ConvertToDetault functions were added to remove IndicIME functionality from elements
+
+Script Changes
+* Added "H" to perform same action as ":" for all scripts
+* Added Zero Width Joiner and Zero Width Non Joiner character supports for all scripts
+* Punctuation characters removed from mapping and replaced with less used symbols
+* Symbols with special meaning for Indic script can be printed by suffixing "~".
+* Added "S" to perform same action as "sh"
+* For all scripts help image is updated
+* For all scripts, typing "a^i" gives separate characters
+* For all scripts, "ou" is now equivalent to "au"
+* For all scripts, R is changed to "Ru" and RR is changed to "RU"
+* For applicable scripts Q and QQ is changed to "Lu~" and "LU~"
+* For applicable scripts, avagrah is now represented with "&"
+* For applicable scripts, chandrabindu is now represented with "M~"
+* Example words are added at the bottom of the help image.
+* Bengali: Added Khand t letter, Changed letter for r, rr and v/w
+* Misspelled "devnagari" is changed to "devanagari"
+* Gurmukhi Script: Tippi and Addak will be printed by M~ and N~ instead of ~ and @.
+* Kannada Script: Swapped characters for e<->E, o<->O. Halant will be retained after consonant.
+		rr character is changed to rx to correctly display rra.
+* Malayalam Script: Swapped characters for e<->E, o<->O. Halant will be retained after consonant.
+		Added chillu character support for N, n, r, l and L
+* Oriya Script: y and Y gives different letters
+* Tamil Script: Swapped characters for e<->E, o<->O. Halant will be retained after consonant.
+		Added kSh letter, 0(zero), f.
+* Telugu Script: Swapped characters for e<->E, o<->O. Halant will be retained after consonant.
+
+Version 2.0 (Oct 2008)
+
+* Changed the way Indic IME is attached to any HTML element
+* Changed associated characters for t, th to th and tH for Tamil and Telugu
+* Added Oriya script. (Currently Oriya is not properly displayed due to font issue.)
+* More object oriented approach developed
+* Added various functions to do bulk operation
+* Optmized memory usage by creating script object per script instead of per element
+* Developer has choice to either automatically attach keyboard event or handle on his own
+
+Verson 1.0 (June 2008)
+
+* Created library to easily integrate in any Website to have IndicIME enabled for it.
+* Supports 8 Indian scripts
+* With few lines of code, visitor will be able to directly write in chosen Indian script

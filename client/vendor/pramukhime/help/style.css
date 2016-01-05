@@ -1,0 +1,110 @@
+body, p
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.pageheader
+{
+	font-size:18px;
+	border-bottom: 1px solid #FF6600;
+	background:white url('../img/pramukhime-icon.png') 0px -1310px no-repeat;
+	padding-left:35px;
+	height:32px;
+	vertical-align:middle;
+	color:#FF6600;
+}
+a:link, a:visited, a:active, a:hover
+{
+	text-decoration:underline;
+	color:#0000FF;
+}
+/*reading problem?*/
+.rp
+{
+	font-size:10px;
+}
+/*quick links*/
+.ql
+{
+	border: 1px solid #ff9900;
+	background-color:#FFFFCC;
+	padding:5px;
+}
+/*warning*/
+.warning
+{
+	border: 1px solid #cc3300;
+	background-color:#FFCCFF;
+	padding:5px;
+}
+.topictitle
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#666666;
+}
+.bengalichar
+{
+	font-size:18px;
+	font-family: Vrinda, Arial Unicode MS;
+	font-weight:bold;
+}
+.devanagarichar
+{
+	font-size:18px;
+	font-family: Mangal, Arial Unicode MS;
+	font-weight:bold;
+}
+.gujaratichar
+{
+	font-size:18px;
+	font-family: Shruti, Arial Unicode MS;
+	font-weight:bold;
+}
+.gurmukhichar
+{
+	font-size:18px;
+	font-family: Raavi, Arial Unicode MS;
+	font-weight:bold;
+}
+.kannadachar
+{
+	font-size:18px;
+	font-family: Tunga, Arial Unicode MS;
+	font-weight:bold;
+}
+.malayalamchar
+{
+	font-size:18px;
+	font-family: Kartika, Arial Unicode MS;
+	font-weight:bold;
+}
+.oriyachar
+{
+	font-size:18px;
+	font-family: Arial Unicode MS;
+	font-weight:bold;
+}
+.tamilchar
+{
+	font-size:18px;
+	font-family: Latha, Arial Unicode MS;
+	font-weight:bold;
+}
+.teluguchar
+{
+	font-size:18px;
+	font-family: Gautami, Arial Unicode MS;
+	font-weight:bold;
+}
+.example
+{
+	border: 1px solid #666;
+	background-color:#CCCCCC;
+	padding:5px;
+}
+.title
+{
+	font-size:16px;
+	font-weight:bold;
+}
